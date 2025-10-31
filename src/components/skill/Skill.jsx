@@ -2,58 +2,99 @@ import React from "react";
 
 const Skill = () => {
   return (
-    <section id="skill" className="bg-[#bddadf] py-[60px]">
-      <div className="max-w-[1320px] mx-auto">
-        <div className="text-center pb-20">
-          <h2 className="text-[45px] font-san font-normal">Skills</h2>
-          <p className="font-san w-auto text-[18px]">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Asperiores, similique.
+    // Section Background ektu change kore clean look deya holo
+    <section id="skill" className="bg-[#bddadf] py-20 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center pb-16">
+          <h2 className="text-4xl md:text-5xl font-bold font-san text-slate-800">
+            My Skills
+          </h2>
+          <p className="font-san w-auto max-w-lg mx-auto text-lg text-slate-600 mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores,
+            similique.
           </p>
         </div>
-        <div className="flex justify-around gap-4 lg:gap-0 flex-wrap">
-          <div className="lg:w-[40%] md:w-[40%] w-full">
-            <div className="p-5 rounded-[8px] bg-sky-200">
-              <h2 className="text-[35px] text-center pb-7 font-san">
-                Skills & Tools:
-              </h2>
-              <div className="flex justify-around">
-                <al className="flex flex-col gap-2">
-                  <li className="font-dms text-[20px]">HTML</li>
-                  <li className="font-dms text-[20px]">Css</li>
-                  <li className="font-dms text-[20px]">JavaScript</li>
-                  <li className="font-dms text-[20px]">React JS</li>
-                  <li className="font-dms text-[20px]">Tailwind Css</li>
-                </al>
-                <al className="flex flex-col gap-2">
-                  <li className="font-dms text-[20px]">Bootstrap</li>
-                  <li className="font-dms text-[20px]">Redux</li>
-                  <li className="font-dms text-[20px]">Context Api</li>
-                  <li className="font-dms text-[20px]">React Router</li>
-                  <li className="font-dms text-[20px]">Api</li>
-                </al>
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-[40%] md:w-[40%] w-full ">
-            <div className="p-5 rounded-[8px] bg-sky-200">
-              <h2 className="text-[35px] text-center pb-7 font-san">
-                Tools & Softwares
-              </h2>
-             <div className="flex justify-around pb-[39px]">
-              <al className="flex flex-col gap-2">
-                <li className="font-dms text-[20px]">Git</li>
-                <li className="font-dms text-[20px]">Github</li>
-                <li className="font-dms text-[20px]">Netlify</li>
-                <li className="font-dms text-[20px]">Vercel</li>
-              </al>
-              <al className="flex flex-col gap-2">
-                <li className="font-dms text-[20px]">Figma</li>
-                <li className="font-dms text-[20px]">Phtotshop</li>
 
-              </al>
-            </div>
-            </div>
+        {/* Card-gulor moddhe gap barano holo */}
+        <div className="flex justify-center gap-8 lg:gap-12 flex-wrap">
+          
+          {/* === Skill Card 1 === */}
+          {/* Box-shadow, padding, rounding, hover effect add kora holo.
+            'h-full' add kora hoyeche jate duita card er height shoman thake.
+          */}
+          <div className="lg:w-[45%] md:w-[48%] w-full  rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer h-full">
+            <h2 className="text-3xl text-center pb-8 font-san font-semibold text-slate-700">
+              Skills & Frameworks
+            </h2>
+            
+            {/* List-ke 'grid' e shajano holo clean look er jonno.
+              HTML tag <al> change kore <ul> kora holo.
+            */}
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-4">
+              {/* Skill item-guloke "badge" style deya holo + hover effect */}
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                HTML
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                CSS
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                JavaScript
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                React JS
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Tailwind CSS
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Bootstrap
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Redux
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Context API
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                React Router
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-sky-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                REST API
+              </li>
+            </ul>
+          </div>
+
+          {/* === Skill Card 2 === */}
+          <div className="lg:w-[45%] md:w-[48%] w-full  rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer h-full">
+            <h2 className="text-3xl text-center pb-8 font-san font-semibold text-slate-700">
+              Tools & Softwares
+            </h2>
+            
+            {/* Ekhaneo grid layout use kora holo */}
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-4">
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Git
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Github
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Netlify
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Vercel
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Figma
+              </li>
+              <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Photoshop
+              </li>
+               <li className="font-dms text-lg bg-sky-100 text-slate-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-sky-200 hover:shadow-md hover:scale-105">
+                Vs Code
+              </li>
+            </ul>
           </div>
         </div>
       </div>
