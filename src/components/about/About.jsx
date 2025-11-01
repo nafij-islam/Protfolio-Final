@@ -61,21 +61,21 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-slate-200">
                 
                 {/* Stat 1: Projects Completed */}
-                <div className="flex flex-col items-center bg-sky-50 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
+                <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Trophy size={32} className="text-sky-600 mb-2" />
                     <span className="text-4xl font-bold text-sky-800">22+</span>
                     <p className="text-slate-600 mt-1">Projects Completed</p>
                 </div>
                 
                 {/* Stat 2: Years Experience */}
-                <div className="flex flex-col items-center bg-sky-50 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
+                <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Briefcase size={32} className="text-sky-600 mb-2" />
                     <span className="text-4xl font-bold text-sky-800">2+</span>
                     <p className="text-slate-600 mt-1">Years of Experience</p>
                 </div>
                 
                 {/* Stat 3: Tech Stacks */}
-                <div className="flex flex-col items-center bg-sky-50 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
+                <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Code size={32} className="text-sky-600 mb-2" />
                     <span className="text-4xl font-bold text-sky-800">5+</span>
                     <p className="text-slate-600 mt-1">Key Technologies</p>

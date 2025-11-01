@@ -6,16 +6,18 @@ import Skill from './components/skill/Skill';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
+
 const App = () => {
   return (
-    <div>
+    <>
       <Navber/>
       <Banner/>
       <About/>
       <Skill/>
       <Contact/>
       <Footer/>
-    </div>
+      
+    </>
   )
 }
 

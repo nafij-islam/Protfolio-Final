@@ -102,8 +102,8 @@ const Contact = () => {
             {/* === Submit Button === */}
             <div className="text-center mt-8">
               <button
-                type="submit"
-                className="w-full md:w-auto bg-sky-600 text-white text-lg font-bold font-san py-3 px-12 rounded-lg transition-all duration-300 hover:bg-sky-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+               type="submit "
+                className="w-full md:w-auto bg-[#1E7EA7] text-white text-lg font-bold font-san py-3 px-12 rounded-lg transition-all duration-300 hover:bg-sky-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
               >
                 Send Message
               </button>
