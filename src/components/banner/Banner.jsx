@@ -8,6 +8,7 @@ import { FaTelegram } from "react-icons/fa6";
 // 1. Import the TypeAnimation component
 import { TypeAnimation } from 'react-type-animation';
 
+
 const Banner = () => {
   return (
    <section className='bg-[#bddadf] py-[70px] lg:py-[100px] px-2'>
@@ -15,12 +16,7 @@ const Banner = () => {
            <div>
                {/* Animated Heading */}
                <TypeAnimation
-                  sequence={[
-                    "HEY,I'M NAFIJ ISLAM",
-                    1500,
-                    "I'M A FRONTEND-FOCUSED WEB DEVELOPER",
-                    1500,
-                  ]}
+                  sequence={["HEY,I'M NAFIJ ISLAM",1500,"I'M A FRONTEND-FOCUSED WEB DEVELOPER",1500,]}
                   wrapper="h1"
                   speed={30}
                   className='text-center text-[#318c77] lg:w-[900px] mx-auto text-[35px] lg:text-[50px] font-san font-bold'
@@ -41,7 +37,7 @@ const Banner = () => {
                  </button>
 
                  {/* Resume Button */}
-                 <a href="../../../public/Nafij-Islam-Resume.pdf" target="_blank">
+                 <a href="Nafij-Islam-Resume.pdf" target="_blank">
                    <button className='lg:py-4 py-4 rounded-[5px] hover:text-[#318c77] duration-300 hover:bg-transparent border-[#1E7EA7] border-2 lg:px-7 px-5 bg-[#1E7EA7] text-white font-bold font-san'>
                      Download Resume
                    </button>

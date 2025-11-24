@@ -63,7 +63,7 @@ const About = () => {
                 {/* Stat 1: Projects Completed */}
                 <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Trophy size={32} className="text-sky-600 mb-2" />
-                    <span className="text-4xl font-bold text-sky-800">22+</span>
+                    <span className="text-4xl font-bold text-sky-800">18+</span>
                     <p className="text-slate-600 mt-1">Projects Completed</p>
                 </div>
                 

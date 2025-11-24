@@ -1,84 +1,76 @@
 import React from "react";
 import { ExternalLink, Github, Code, Layout, GitBranch } from "lucide-react"; // lucide-react icons byabohar kora holo jate code stable thake
-import projectimg from '../../assets/projectone.png'
-import projectimgtwo from '../../assets/projecttwo.png'
-import projectimhthree from '../../assets/projectthree.png'
-// --- LOCAL IMAGE SIMULATION / IMPORTER PATTERN ---
-// Normal React project-e apnar image import er pattern emon hobe:
-// import projectone from './path/to/logoimg.png';
-// Kintu Canvas-e local import kaaj kore na, tai amra ekta constant-e direct URL use korchi.
+import projectimg from "../../assets/projectone.png";
+import projectimgtwo from "../../assets/projecttwo.png";
+import projectimhthree from "../../assets/projectthree.png";
+//
 const projectone = projectimg;
 const projecttwo = projectimgtwo;
 const projectthree = projectimhthree;
 
-// Projects er dummy data
 const projectData = [
   {
     id: 1,
     title: "E-commerce Platform UI",
-    description: "A responsive and feature-rich user interface for a modern online store, built with speed and accessibility in mind.",
+    description:
+      "A responsive and feature-rich user interface for a modern online store, built with speed and accessibility in mind.",
     tech: ["React", "Redux", "Tailwind CSS", "Firebase"],
-    // Ekhane 'projectone' variable-ti byabohar kora holo (jemon apni cheyechilen)
-    imageUrl: projectone, 
+
+    imageUrl: projectone,
     liveLink: "https://ecommerce-demo.netlify.app",
-    githubLink: "https://github.com/user/ecom-ui", // Link update kora holo
+    githubLink: "https://github.com/user/ecom-ui",
   },
   {
     id: 2,
     title: "Task Management App",
-    description: "A simple, single-page application (SPA) for managing daily tasks and productivity tracking, utilizing local storage.",
+    description:
+      "A simple, single-page application (SPA) for managing daily tasks and productivity tracking, utilizing local storage.",
     tech: ["React", "Context API", "JavaScript", "Local Storage"],
-    imageUrl: projectthree, // Apnar project image URL ekhane din
-    liveLink: "https://task-app-demo.netlify.app", // Link update kora holo
-    githubLink: "https://github.com/myuser/task-app", 
+    imageUrl: projectthree,
+    liveLink: "https://task-app-demo.netlify.app",
+    githubLink: "https://github.com/myuser/task-app",
   },
   {
     id: 3,
     title: "Weather Dashboard",
-    description: "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
+    description:
+      "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
     tech: ["React", "API", "Axios", "Emotion CSS"],
-    imageUrl: projecttwo, // Apnar project image URL ekhane din
-    liveLink: "https://weather-demo.vercel.app", 
-    githubLink: "https://github.com/myuser/weather-dashboard", 
+    imageUrl: projecttwo,
+    liveLink: "https://weather-demo.vercel.app",
+    githubLink: "https://github.com/myuser/weather-dashboard",
   },
- 
-  // Apni icche hole ekhane aro project add korte paren
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className="bg-[#bddadf] py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
-        
-        {/* === Section Title === */}
         <div className="text-center pb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-san text-slate-800">
             My Creative Endeavors
           </h2>
           <p className="font-san w-auto max-w-2xl mx-auto text-lg text-slate-600 mt-4">
-            Ei gulo amar kora kichu guruttopurno kaj, jara amake frontend development-e proman kore. Prottek project-e amar passion ebong problem-solving ability-r protifolon.
+            Ei gulo amar kora kichu guruttopurno kaj, jara amake frontend
+            development-e proman kore. Prottek project-e amar passion ebong
+            problem-solving ability-r protifolon.
           </p>
         </div>
 
-        {/* === Projects Grid === */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
           {projectData.map((project) => (
-            <div 
+            <div
               key={project.id}
               className="bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col group" // 'group' class added for advanced hover effects
             >
-              
-              {/* === Project Image === */}
               <div className="h-48 rounded-t-xl overflow-hidden relative shadow-md">
                 {project.imageUrl ? (
-                  <img 
-                    src={project.imageUrl} 
-                    alt={`${project.title} Screenshot`} 
+                  <img
+                    src={project.imageUrl}
+                    alt={`${project.title} Screenshot`}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" // Image zoom on hover
                   />
                 ) : (
-                  // Placeholder if no image URL is provided
                   <div className="w-full h-full bg-sky-50 flex items-center justify-center text-sky-300 text-lg font-semibold">
                     <Layout size={40} className="mr-2" /> No Image
                   </div>
@@ -91,15 +83,19 @@ const Projects = () => {
 
               {/* === Project Content === */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-slate-800 mb-2">{project.title}</h3>
-                <p className="text-slate-600 mb-4 flex-grow text-sm md:text-base">{project.description}</p>
-                
+                <h3 className="text-2xl font-bold text-slate-800 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-slate-600 mb-4 flex-grow text-sm md:text-base">
+                  {project.description}
+                </p>
+
                 {/* Tech Stack Badges */}
                 <div className="flex flex-wrap gap-2 mb-6 border-t pt-4 border-slate-100">
                   {project.tech.map((techItem) => (
-                    <span 
-                        key={techItem} 
-                        className="flex items-center gap-1 bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm" // Updated badge style
+                    <span
+                      key={techItem}
+                      className="flex items-center gap-1 bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm" // Updated badge style
                     >
                       <Code size={14} /> {techItem}
                     </span>
@@ -107,8 +103,9 @@ const Projects = () => {
                 </div>
 
                 {/* Project Links */}
-                <div className="flex flex-wrap gap-3 mt-auto justify-center md:justify-start"> {/* Buttons centered on mobile, left-aligned on desktop */}
-                  
+                <div className="flex flex-wrap gap-3 mt-auto justify-center md:justify-start">
+                  {" "}
+                  {/* Buttons centered on mobile, left-aligned on desktop */}
                   {/* Live Demo Link */}
                   {project.liveLink && project.liveLink !== "#" && (
                     <a
@@ -120,7 +117,6 @@ const Projects = () => {
                       <ExternalLink size={18} /> Live Demo
                     </a>
                   )}
-                  
                   {/* GitHub Link */}
                   {project.githubLink && project.githubLink !== "#" && (
                     <a
