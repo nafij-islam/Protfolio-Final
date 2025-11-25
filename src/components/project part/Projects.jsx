@@ -2,16 +2,22 @@ import React from "react";
 import { ExternalLink, Github, Code, Layout, GitBranch } from "lucide-react"; // lucide-react icons byabohar kora holo jate code stable thake
 import projectimg from "../../assets/projectone.png";
 import projectimgtwo from "../../assets/projecttwo.png";
-import projectimhthree from "../../assets/projectthree.png";
+import projectimhthree from "../../assets/projectimhthree.png";
+import Projectimgfour from '../../assets/innovatefour.png'
+import projectfive from '../../assets/projectfive.png'
+import projectsix from '../../assets/projectsix.png'
 //
 const projectone = projectimg;
 const projecttwo = projectimgtwo;
 const projectthree = projectimhthree;
+const projectimgfour = Projectimgfour;
+const projectimgfive = projectfive;
+const projectimgsix = projectsix;
 
 const projectData = [
   {
     id: 1,
-    title: "E-commerce Platform UI",
+    title: "",
     description:
       "A responsive and feature-rich user interface for a modern online store, built with speed and accessibility in mind.",
     tech: ["React", "Redux", "Tailwind CSS", "Firebase"],
@@ -22,7 +28,7 @@ const projectData = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "E-commerce Platform UI",
     description:
       "A simple, single-page application (SPA) for managing daily tasks and productivity tracking, utilizing local storage.",
     tech: ["React", "Context API", "JavaScript", "Local Storage"],
@@ -32,11 +38,41 @@ const projectData = [
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "Innovate Animation Project",
     description:
       "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
     tech: ["React", "API", "Axios", "Emotion CSS"],
     imageUrl: projecttwo,
+    liveLink: "https://weather-demo.vercel.app",
+    githubLink: "https://github.com/myuser/weather-dashboard",
+  },
+   {
+    id: 4,
+    title: "Innovate Responsive",
+    description:
+      "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
+    tech: ["React", "API", "Axios", "Emotion CSS"],
+    imageUrl: projectimgfour,
+    liveLink: "https://fins-project.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Fins-Project",
+  },
+     {
+    id: 5,
+    title: "Innovate Responsive",
+    description:
+      "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
+    tech: ["React", "API", "Axios", "Emotion CSS"],
+    imageUrl: projectimgfive,
+    liveLink: "https://cyber-intern.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Cyber-Intern",
+  },
+     {
+    id: 6,
+    title: "Innovate Responsive",
+    description:
+      "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
+    tech: ["React", "API", "Axios", "Emotion CSS"],
+    imageUrl: projectimgsix,
     liveLink: "https://weather-demo.vercel.app",
     githubLink: "https://github.com/myuser/weather-dashboard",
   },

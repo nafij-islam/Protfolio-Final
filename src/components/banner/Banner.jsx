@@ -39,7 +39,7 @@ const Banner = () => {
                  {/* Resume Button */}
                  <a href="Nafij-Islam-Resume.pdf" target="_blank">
                    <button className='lg:py-4 py-4 rounded-[5px] hover:text-[#318c77] duration-300 hover:bg-transparent border-[#1E7EA7] border-2 lg:px-7 px-5 bg-[#1E7EA7] text-white font-bold font-san'>
-                     Download Resume
+                      My Resume
                    </button>
                  </a>
 
