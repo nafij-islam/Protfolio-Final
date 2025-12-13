@@ -6,6 +6,7 @@ import projectimhthree from "../../assets/projectimhthree.png";
 import Projectimgfour from '../../assets/innovatefour.png'
 import projectfive from '../../assets/projectfive.png'
 import projectsix from '../../assets/projectsix.png'
+import projectsaven from '../../assets/quater.png'
 //
 const projectone = projectimg;
 const projecttwo = projectimgtwo;
@@ -13,55 +14,57 @@ const projectthree = projectimhthree;
 const projectimgfour = Projectimgfour;
 const projectimgfive = projectfive;
 const projectimgsix = projectsix;
+const projectimgsaven = projectsaven;
+
 
 const projectData = [
   {
     id: 1,
-    title: "",
+    title: "Innovate Project",
     description:
       "A responsive and feature-rich user interface for a modern online store, built with speed and accessibility in mind.",
-    tech: ["React", "Redux", "Tailwind CSS", "Firebase"],
+    tech: ["React", "Tailwind CSS"],
 
     imageUrl: projectone,
-    liveLink: "https://ecommerce-demo.netlify.app",
-    githubLink: "https://github.com/user/ecom-ui",
+    liveLink: "https://innovate-five-ashen.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Innovate-Five",
   },
   {
     id: 2,
     title: "E-commerce Platform UI",
     description:
       "A simple, single-page application (SPA) for managing daily tasks and productivity tracking, utilizing local storage.",
-    tech: ["React", "Context API", "JavaScript", "Local Storage"],
+    tech: ["React", "Context API", "JavaScript", "Local Storage","TanStack","Tailwind","Redux"],
     imageUrl: projectthree,
-    liveLink: "https://task-app-demo.netlify.app",
-    githubLink: "https://github.com/myuser/task-app",
+    liveLink: "https://ecommerce-phi-six-69.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Ecommerce",
   },
   {
     id: 3,
     title: "Innovate Animation Project",
     description:
       "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
-    tech: ["React", "API", "Axios", "Emotion CSS"],
+    tech: ["React", "API","Css Animation",],
     imageUrl: projecttwo,
-    liveLink: "https://weather-demo.vercel.app",
-    githubLink: "https://github.com/myuser/weather-dashboard",
+    liveLink: "https://innoovate.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Innoovate",
   },
    {
     id: 4,
     title: "Innovate Responsive",
     description:
       "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
-    tech: ["React", "API", "Axios", "Emotion CSS"],
+    tech: ["React"],
     imageUrl: projectimgfour,
-    liveLink: "https://fins-project.vercel.app/",
-    githubLink: "https://github.com/nafij-islam/Fins-Project",
+    liveLink: "https://innovate-four-8mhv.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/InnovateFour",
   },
      {
     id: 5,
     title: "Innovate Responsive",
     description:
       "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
-    tech: ["React", "API", "Axios", "Emotion CSS"],
+    tech: ["React"],
     imageUrl: projectimgfive,
     liveLink: "https://cyber-intern.vercel.app/",
     githubLink: "https://github.com/nafij-islam/Cyber-Intern",
@@ -71,10 +74,20 @@ const projectData = [
     title: "Innovate Responsive",
     description:
       "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
-    tech: ["React", "API", "Axios", "Emotion CSS"],
+    tech: ["React"],
     imageUrl: projectimgsix,
-    liveLink: "https://weather-demo.vercel.app",
-    githubLink: "https://github.com/myuser/weather-dashboard",
+    liveLink: "https://github.com/nafij-islam/Fins-Project",
+    githubLink: "https://fins-project.vercel.app/",
+  },
+   {
+    id: 7,
+    title: "Innovate Responsive",
+    description:
+      "Fetches and displays real-time weather data for global cities using a public API, with a clean, animated interface.",
+    tech: ["React", ],
+    imageUrl: projectimgsaven,
+    liveLink: "https://quater-six.vercel.app/",
+    githubLink: "https://github.com/nafij-islam/Quater",
   },
 ];
 

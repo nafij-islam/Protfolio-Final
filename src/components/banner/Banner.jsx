@@ -32,9 +32,11 @@ const Banner = () => {
                <div className='text-center flex justify-center gap-4'>
 
                  {/* View Projects Button */}
-                 <button className='lg:py-4 py-4 rounded-[5px] hover:text-[#1E7EA7] duration-300 hover:bg-transparent border-transparent hover:border-[#1E7EA7] border-2 lg:px-7 px-5 bg-[#1E7EA7] text-white font-bold font-san'>
+                <a href="#projects">
+                   <button className='lg:py-4 py-4 rounded-[5px] hover:text-[#1E7EA7] duration-300 hover:bg-transparent border-transparent hover:border-[#1E7EA7] border-2 lg:px-7 px-5 bg-[#1E7EA7] text-white font-bold font-san'>
                    View My Project
                  </button>
+                </a>
 
                  {/* Resume Button */}
                  <a href="Nafij-Islam-Resume.pdf" target="_blank">
