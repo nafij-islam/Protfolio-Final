@@ -6,15 +6,21 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 // 1. Import the TypeAnimation component
 import { TypeAnimation } from 'react-type-animation'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
 
 const Banner = () => {
 
 
+   useEffect(() => {
+      AOS.init({ duration: 800, once: true });
+    }, []);
   
  
 
   return (
-   <section  className='bg-[#bddadf] box py-[90px] lg:pt-[170px] lg:pb-[70px] px-2'>
+   <section  data-aos="fade-up"  className='bg-[#bddadf] box py-[90px] lg:pt-[170px] lg:pb-[70px] px-2'>
        <div className='max-w-[1320px] mx-auto'>
            <div>
                {/* Animated Heading */}
