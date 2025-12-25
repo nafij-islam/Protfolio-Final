@@ -1,9 +1,21 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
+
 
 const Skill = () => {
+
+
+   useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+
+
   return (
     // Section Background ektu change kore clean look deya holo
-    <section id="skill" className="bg-[#bddadf] py-20 md:py-24">
+    <section data-aos="zoom-out" id="skill" className="bg-[#bddadf] py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center pb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-san text-slate-800">

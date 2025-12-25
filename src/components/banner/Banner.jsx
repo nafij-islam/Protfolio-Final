@@ -4,14 +4,17 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
-
 // 1. Import the TypeAnimation component
-import { TypeAnimation } from 'react-type-animation';
-
+import { TypeAnimation } from 'react-type-animation'
 
 const Banner = () => {
+
+
+  
+ 
+
   return (
-   <section className='bg-[#bddadf] py-[70px] lg:py-[100px] px-2'>
+   <section  className='bg-[#bddadf] box py-[90px] lg:pt-[170px] lg:pb-[70px] px-2'>
        <div className='max-w-[1320px] mx-auto'>
            <div>
                {/* Animated Heading */}
@@ -39,7 +42,7 @@ const Banner = () => {
                 </a>
 
                  {/* Resume Button */}
-                 <a href="Nafij-Islam-Resume.pdf" target="_blank">
+                 <a href="Resume-Nafij-Islam.pdf" target="_blank">
                    <button className='lg:py-4 py-4 rounded-[5px] hover:text-[#318c77] duration-300 hover:bg-transparent border-[#1E7EA7] border-2 lg:px-7 px-5 bg-[#1E7EA7] text-white font-bold font-san'>
                       My Resume
                    </button>

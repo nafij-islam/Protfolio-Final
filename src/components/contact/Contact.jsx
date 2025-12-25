@@ -1,9 +1,23 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
+
+
 
 const Contact = () => {
+
+
+   useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+
+
   return (
     // Section background, padding Skill section er motoi rakha hoyeche
-    <section id="contact" className="bg-[#bddadf] py-20 md:py-24">
+    <section data-aos="fade-up"
+     data-aos-duration="3000" id="contact" className="bg-[#bddadf] py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         
         {/* === Section Title === */}

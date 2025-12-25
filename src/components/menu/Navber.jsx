@@ -4,8 +4,21 @@ import logotext from "../../assets/logotext.png";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3 } from "react-icons/hi2";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
+
+
 
 const Navber = () => {
+
+ useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+
+
+
   let [bar, setBar] = useState(false);
 
   let handlebar = () => {
@@ -13,7 +26,7 @@ const Navber = () => {
   };
 
   return (
-    <section id="Home" className="bg-[#bddadf] py-10 px-1">
+    <section  data-aos="fade-down" id="Home" className="bg-[#bddadf] py-3 fixed w-full z-100 px-1">
       <div className="max-w-[1320px] mx-auto">
         <div className="flex justify-between items-center">
           <div className="">
@@ -76,7 +89,7 @@ const Navber = () => {
             className="lg:hidden text-[#1E7EA7] text-[30px] block"
           >
             {bar ? <RxCross2 /> : <HiMiniBars3 />}
-          </div>
+          </div>                                                                                                                                                                                                                                                                                                                                                                        
         </div>
       </div>
     </section>

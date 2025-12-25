@@ -1,10 +1,20 @@
 import React from "react";
 import { User, Code, HeartHandshake, Zap, Trophy, Briefcase } from "lucide-react"; // lucide-react use kora holo jate code compile kore
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
 
 const About = () => {
+
+   useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+
+
   return (
     // Section background & padding maintain kora holo
-    <section id="about" className="bg-[#bddadf] py-20 md:py-24">
+    <section data-aos="fade-down-left" id="about" className="bg-[#bddadf] py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         
         {/* === Section Title === */}
@@ -63,21 +73,21 @@ const About = () => {
                 {/* Stat 1: Projects Completed */}
                 <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Trophy size={32} className="text-sky-600 mb-2" />
-                    <span className="text-4xl font-bold text-sky-800">18+</span>
+                    <span className="text-4xl font-bold text-sky-800">20+</span>
                     <p className="text-slate-600 mt-1">Projects Completed</p>
                 </div>
                 
                 {/* Stat 2: Years Experience */}
                 <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Briefcase size={32} className="text-sky-600 mb-2" />
-                    <span className="text-4xl font-bold text-sky-800">2+</span>
+                    <span className="text-4xl font-bold text-sky-800">1+</span>
                     <p className="text-slate-600 mt-1">Years of Experience</p>
                 </div>
                 
                 {/* Stat 3: Tech Stacks */}
                 <div className="flex flex-col items-center bg-sky-100 p-6 rounded-xl shadow-inner border-b-4 border-sky-500 transition-transform duration-300 hover:scale-[1.02]">
                     <Code size={32} className="text-sky-600 mb-2" />
-                    <span className="text-4xl font-bold text-sky-800">5+</span>
+                    <span className="text-4xl font-bold text-sky-800">18+</span>
                     <p className="text-slate-600 mt-1">Key Technologies</p>
                 </div>
                 

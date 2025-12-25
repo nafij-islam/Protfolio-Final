@@ -8,6 +8,12 @@ import projectfive from '../../assets/projectfive.png'
 import projectsix from '../../assets/projectsix.png'
 import projectsaven from '../../assets/quater.png'
 //
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
+
+
 const projectone = projectimg;
 const projecttwo = projectimgtwo;
 const projectthree = projectimhthree;
@@ -92,8 +98,14 @@ const projectData = [
 ];
 
 const Projects = () => {
+
+   useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+
   return (
-    <section id="projects" className="bg-[#bddadf] py-20 md:py-24">
+    <section data-aos="zoom-in-up" id="projects" className="bg-[#bddadf] py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center pb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-san text-slate-800">
